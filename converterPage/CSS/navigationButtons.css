@@ -1,0 +1,19 @@
+#previousPage{
+	margin-left: 500px;	
+}
+
+#homePage{
+	display: inline;
+}​
+
+#nextPage{
+	display: inline;	
+}
+
+#closingBox{
+	width: 500px;
+	height: 400px;
+	border: 1px double yellow;
+	padding-top: 30px;
+	margin-left: 340px;	
+}

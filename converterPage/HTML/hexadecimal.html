@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		 <!--[if lt IE 9]>
+			<script src="../html5shiv-master/dist/html5shiv.js"></script>
+		 <![endif]-->
+		<title>Tutorial for converting hexadecimal values to binary, octal and decimal</title>
+		<link href="../CSS/cssFile.css" rel="stylesheet"/>
+		<link href="../CSS/navigationButtons.css" rel="stylesheet"/>
+		<!-- <link href="../CSSfiles/cssAllPlatform.css" type="text/css" rel="stylesheet" media="only screen and (max-device-width: 480px)" /> -->
+		<link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here" rel="stylesheet"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+	
+	<body>
+
+		<!-- *****************************************************************************************************************************
+		*																														         *
+		*																														         *
+		*									PART 4: HEXADECIMAL CONVERSION														         *
+		*																														         *
+		*																														         *
+		***************************************************************************************************************************** -->
+			
+		<h1 class="mainTitle" id="hexConversion">Hexadecimal conversion</h1>
+		<br/>
+		<br/>
+		<br/>
+		<p class="explanation"></p>
+		<p class="explanation">Before we start examining hexadecimal expressions, it is important to do a brief recap of what we have encountered so far.</p>
+		<br />
+		<p class="explanation">We have seen that decimal expressions have <span class="normalFont">10</span> numbers (<span class="normalFont">
+		0-9</span> - hence: <span class="normalFontOrange">BASE 10</span>); binary expressions have <span class="normalFont">2</span> numbers 
+		(<span class="normalFont">1 + 0</span> - hence: <span class="normalFontOrange">BASE 2</span>); octal expressions have 
+		<span class="normalFont">8</span> numbers (<span class="normalFont">0-7</span> - hence: <span class="normalFontOrange">BASE 8</span>).</p>
+		<br />
+		<p class="explanation">However: hexadecimal expressions have <span class="normalFont">16</span> characters altogether (<span class="normalFont">
+		0-9</span> and <span class="normalFont">A-F</span> - hence: it is base <span class="normalFontOrange">BASE 16</span>).</p>
+		<br />
+		<p class="explanation">Therefore, to convert hexadecimal expressions to decimal, the same technique seen before for binary expressions
+		and octal expressions is used: the index becomes the exponent of <span class="normalFont">16</span>, and the result of this operation
+		is then multiplied with the number to which that index belongs.</p>
+		
+		<br />
+		
+		<p class="explanation">Let's have a look at an example.</p>
+		
+		<br />
+		
+		<p class="explanation">Say we have the following hexadecimal expression:</p> 
+		
+		<br />
+		
+		<p class="explanation"><span class="normalFontOrange">A  9  F  3  1  D</span></p>
+		
+		<br />
+		
+		<p class="explanation">With <span class="greenChangeFont">INDICES</span>, the hexadecimal expression now looks like this:</p>
+		
+		<br />
+		
+		<p class="explanation"><span class="normalFontOrange">A<sub>5</sub>   9<sub>4</sub>   F<sub>3</sub>   3<sub>2</sub>   1<sub>1</sub>   D<sub>0</sub></span></p>
+		
+		<br />
+		
+		<p class="explanation">As usual, we start with the <span class="underline">leftmost</span> digit: </p>
+		
+		<br />
+		
+		<p class="explanation"><span class="specialNormalFontOrange">A<sub class="used">5</sub></span>   <span class="normalFontOrange">9<sub>4</sub>   F<sub>3</sub>   3<sub>2</sub>   1<sub>1</sub>   D<sub>0</sub></span></p>
+
+		<br />
+		
+		<p class="explanation">First, we set the index <span class="normalFont">5</span> as exponent to base <span class="normalFont">16</span>:</p>
+		<p class="explanation"><span class="normalFont">16<sup>5</sup> = 1,048,576</span></p>
+		<p class="explanation">We then multiply this value by the number to which the "index/exponent" is attached...</p>
+		<p class="explanationRed"> ...but wait! Didn't we see in the hexadecimal table (see lesson on <a href="decimal.html#hexTable" class="linkToTable">
+		decimals</a>) that character <span class="normalFont">A</span> is equivalent to <span class="normalFont">10</span>?</p>
+		<p class="explanation">Therefore, instead of doing: <span class="normalFont">1,048,576 x A</span>, we do:</p>
+		<p class="explanation"><span class="normalFont">1,048,576 x 10 = </span><span class="normalFontOrange">10,485,760</span></p>
+		
+		<br />
+		
+		<p class="explanation">We move on to the next digit: </p>
+		
+		<br />
+		
+		<p class="explanation"><span class="normalFontOrange">A<sub>5</sub></span>   <span class="specialNormalFontOrange">9<sub class="used">4</sub></span>   <span class="normalFontOrange">F<sub>3</sub>   3<sub>2</sub>   1<sub>1</sub>   D<sub>0</sub></span></p>
+		
+		<br />
+		
+		<p class="explanation">We set the index <span class="normalFont">4</span> as exponent to base <span class="normalFont">16</span>:</p>
+		<p class="explanation"><span class="normalFont">16<sup>4</sup> = 65,536</span></p>
+		<p class="explanation">We then multiply this value by the number to which the "index/exponent" is attached:</p>
+		<p class="explanation"><span class="normalFont">65,536 x 9 = </span><span class="normalFontOrange">589,824</span></p>		
+		
+		<br />
+		
+		<p class="explanation">We move on to the next digit: </p>
+		
+		<br />
+		
+		<p class="explanation"><span class="normalFontOrange">A<sub>5</sub>   9<sub>4</sub></span>   <span class="specialNormalFontOrange">F<sub class="used">3</sub></span>   <span class="normalFontOrange">3<sub>2</sub>   1<sub>1</sub>   D<sub>0</sub></span></p>
+		
+		<br />
+		
+		<p class="explanation">We set the index <span class="normalFont">3</span> as exponent to base <span class="normalFont">16</span>:</p>
+		<p class="explanation"><span class="normalFont">16<sup>3</sup> = 4,096</span></p>
+		<p class="explanation">We then multiply this value by the number to which the "index/exponent" is attached...</p>		
+		<p class="explanationRed"> ...but wait! Didn't we see in the hexadecimal table (see lesson on <a href="decimal.html#hexTable" class="linkToTable">
+		decimals</a>) that character <span class="normalFont">F</span> is equivalent to <span class="normalFont">15</span>?</p>		
+		<p class="explanation">Therefore, instead of doing: <span class="normalFont">4,096 x F</span>, we do:</p>
+		<p class="explanation"><span class="normalFont">4,096 x 15 = </span><span class="normalFontOrange">61,440</span></p>
+
+		<br />
+
+		<p class="explanation">We move on to the next digit: </p>
+		
+		<br />
+		
+		<p class="explanation"><span class="normalFontOrange">A<sub>5</sub>   9<sub>4</sub>   F<sub>3</sub></span>   <span class="specialNormalFontOrange">3<sub class="used">2</sub></span>   <span class="normalFontOrange">1<sub>1</sub>   D<sub>0</sub></span></p>
+		
+		<br />
+		
+		<p class="explanation">The index <span class="normalFont">2</span> is set as exponent to base <span class="normalFont">16</span>:</p>
+		<p class="explanation"><span class="normalFont">16<sup>2</sup> = 256</span></p>
+		<p class="explanation">We then multiply this value by the number to which the "index/exponent" is attached:</p>
+		<p class="explanation"><span class="normalFont">256 x 3 = </span><span class="normalFontOrange">768</span></p>	
+
+		<br />
+		
+		<p class="explanation">We move on to the next digit: </p>
+		
+		<br />
+		
+		<p class="explanation"><span class="normalFontOrange">A<sub>5</sub>   9<sub>4</sub>   F<sub>3</sub>   3<sub>2</sub></span>   <span class="specialNormalFontOrange">1<sub class="used">1</sub></span>   <span class="normalFontOrange">D<sub>0</sub></span></p>
+		
+		<br />
+		
+		<p class="explanation">The index <span class="normalFont">1</span> is set as exponent to base <span class="normalFont">16</span>:</p>
+		<p class="explanation"><span class="normalFont">16<sup>1</sup> = 16</span></p>
+		<p class="explanation">We then multiply this value by the number to which the "index/exponent" is attached:</p>
+		<p class="explanation"><span class="normalFont">16 x 1 = </span><span class="normalFontOrange">16</span></p>	
+
+		<br />
+		
+		<p class="explanation">We move on to the last and final digit: </p>
+		
+		<br />
+		
+		<p class="explanation"><span class="normalFontOrange">A<sub>5</sub>   9<sub>4</sub>   F<sub>3</sub>   3<sub>2</sub>   1<sub>1</sub></span>   <span class="specialNormalFontOrange">D<sub class="used">0</sub></span></p>
+		
+		<br />
+		
+		<p class="explanation">We set the index <span class="normalFont">0</span> as exponent to base <span class="normalFont">16</span>:</p>
+		<p class="explanation"><span class="normalFont">16<sup>0</sup> = 1</span></p>
+		<p class="explanation">We then multiply this value by the number to which the "index/exponent" is attached...</p>		
+		<p class="explanationRed"> ...but wait! Didn't we see in the hexadecimal table (see lesson on <a href="decimal.html#hexTable" class="linkToTable">
+		decimals</a>) that character <span class="normalFont">D</span> is equivalent to <span class="normalFont">13</span>?</p>		
+		<p class="explanation">Therefore, instead of doing: <span class="normalFont">1 x D</span>, we do:</p>
+		<p class="explanation"><span class="normalFont">1 x 13 = </span><span class="normalFontOrange">13</span></p>			
+		<br />
+		<p class="explanation">We now add all of the values found above:</p>
+		<br />
+		<p class="explanation"><span class="normalFontOrange">10,485,760 + 589,824 + 61,440 + 768 + 16 + 13 = 11,137,821</span></p>
+		<br />
+		<p class="explanation">Recap time!</p>
+		<br />
+		<p class="explanation">Converting a hexadecimal expression to a decimal value consists of the following steps:</p>
+		<br />
+		
+		<ol class="explanation">
+			<li>assign an index to every digit of the hexadecimal expression (starting with index <span class="normalFont">0</span> 
+			on the <span class="underline">rightmost</span> digit)</li>
+			<li>use that index number as an exponent, this time of base <span class="normalFont">16</span> (bearing in mind that 
+			hexadecimal values range from <span class="normalFont">0-9</span> and from <span id="normalFont">A-F</span>)</li>
+			<li>multiply the result with the number to which is attached the "index/exponent"</li>
+			<li>finally, add all the values found, which gives you the decimal value of the hexadecimal expression!</li>
+		</ol>
+		
+		<br />
+
+		<p class="explanation">In this chapter, we only looked at how to convert a hexadecimal expression to a decimal.</p>
+		<br />
+		<p class="explanation">To convert to the other two sorts (binary & octal), simply use the decimal result of your
+		hexadecimal-to-decimal conversion and follow the techniques illustrated in the Decimal chapter:</p>
+
+		<br />
+		
+		<ul class="explanation" id="surf">
+			<li><a href="decimal.html#step1"><span class="underlineYellow">Decimal-to-Binary</span></a></li>
+			<li><a href="decimal.html#step2"><span class="underlineYellow">Decimal-to-Octal</span></a></li>
+			
+		</ul>	
+			
+		<br />
+		<p class="explanation">To go back to top of the page, click <a href="#hexConversion" class="bottomLink">here</a>.</p>
+		<br/>
+		<br />
+		
+		<a id="previousPage" href="octal.html">
+		<img src="../images/previousButton.png" alt="click to go to the OCTAL page" title="click to go to the OCTAL page!" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+		
+		<a id="homePage" href="../converterHomePage.html">
+		<img src="../images/homePageButton.png" alt="click to go to the MENU page" title="click to go to the MENU page!" /></a>
+		
+		<br />
+		<br />
+		<img src="../images/endLine.png" alt="the end" title="the end" id="endLine" />
+		<br />
+		<br />
+
+		<p class="explanation">...and now: I need a break! A very long one!!! Have fun converting! See ya!</p>
+		
+		<br />
+		<br />
+		
+		<img src="../images/sleepingMan.png" alt="zzzzz..." title="Sleepin' stickman..." id="sleepingMan" />
+		
+		<br />
+		<br />
+		
+		<p id="writeEmail">If you have any suggestions on how to improve this site, or simply want to say "Hi!", you are more than welcome to 
+		<a href="mailto:jeanlouisgosselin123@gmail.com" id="clickHere">write to me</a>.</p>
+
+		<br />
+		<br />
+		
+		<footer>&copy; 2017 Jean-Louis Gosselin</footer>
+		
+		<br />
+		
+	</body>
+	
+</html>

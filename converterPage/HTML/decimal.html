@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		 <!--[if lt IE 9]>
+			<script src="../html5shiv-master/dist/html5shiv.js"></script>
+		 <![endif]-->
+		<title>Tutorial for converting decimal values to binary, octal and hexadecimal</title>
+		<link href="../CSS/cssFile.css" rel="stylesheet"/>
+		<link href="../CSS/navigationButtons.css" rel="stylesheet"/>
+		<!-- <link href="../CSSfiles/cssAllPlatform.css" type="text/css" rel="stylesheet" media="only screen and (max-device-width: 480px)" /> -->
+		<link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here" rel="stylesheet"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+	
+	<body>	
+
+
+	<!-- *****************************************************************************************************************************
+		*																														         *
+		*																														         *
+		*									PART 1: DECIMAL CONVERSION															         *
+		*																														         *
+		*																														         *
+		***************************************************************************************************************************** -->
+		
+		<h1 class="mainTitle" id="decimalConversion">Decimal conversion</h1>
+		<br/>
+		<br/>
+		<p class="explanation">This important first part contains all the essential information and techniques to manually convert:</p>
+		<br />
+		<br />
+			
+		<ul class="explanation" id="spongeBob">
+			<li>Decimal to Binary</li>
+			<li>Decimal to Octal</li>
+			<li>Decimal to Hexadecimal</li>
+		</ul>
+		
+		<br />
+		<br />
+		
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		
+		<h3 id="step1" class="miniTitle">Part 1: Decimal-to-Binary</h3>
+		<p class="explanation">To manually convert a decimal value to a binary expression, the method is quite simple.</p>
+		<br /> 
+		<p class="explanation">Let's take the decimal value <span class="normalFont">75</span> (any decimal value will do).</p>
+		<br />
+		<p class="explanation">The following steps show us how to convert this decimal value into a binary expression:</p>
+		<br />
+		
+		
+		<p class="explanation"><span class="normalFont">75 / 2 = 37</span></p>
+		<p class="explanation"> ---> remainder of the division = <span class="normalFontOrange">1</span></p> 
+		<p class="explanation">      (because (<span class="normalFont">37 x 2</span>) <span class="normalFont">+ 1 = 75</span>)</p>
+		
+		<br />
+		
+		<p class="explanation"><span class="normalFont">37 / 2 = 18</span></p> 
+		<p class="explanation"> ---> remainder of the division = <span class="normalFontOrange">1</span></p>
+		
+		<br />
+		
+		<p class="explanation"><span class="normalFont">18 / 2 = 9</span></p>
+		<p class="explanation"> ---> remainder of the division = <span class="normalFontOrange">0</span></p>
+		
+		<br />
+		
+		<p class="explanation"><span class="normalFont">9 / 2 = 4</span></p>
+		<p class="explanation"> ---> remainder of the division = <span class="normalFontOrange">1</span></p>
+		
+		<br />
+		
+		<p class="explanation"><span class="normalFont">4 / 2 = 2</span></p>
+		<p class="explanation"> ---> remainder of the division = <span class="normalFontOrange">0</span></p>
+		
+		<br />
+		
+		<p class="explanation"><span class="normalFont">2 / 2 = 1</span></p>
+		<p class="explanation"> ---> remainder of the division = <span class="normalFontOrange">0</span></p>
+		
+		<br />
+		
+		<p class="explanation"><span class="normalFont">1 / 2 = 0</span></p>
+		<p class="explanation"> ---> remainder of the division = <span class="normalFontOrange">1</span></p> 
+		<p class="explanation">      (because (<span class="normalFont">0 x 2</span>)<span class="normalFont"> + 1 = 1</span>)</p>
+		
+		<br />
+		
+		<p class="explanation">As soon as the division reaches<span class="normalFont"> 0 </span>, <span class="colourRed">we stop!</span></p>
+		<br />
+		<p class="explanation">Let's read all the remainder values from top to bottom:</p>
+		<br />
+		<p class="explanation"><span class="normalFontOrange">1 1 0 1 0 0 1</span></p>
+		<br />
+		<p class="explanation">Now let's <span class="underline">invert</span> the order of these numbers, as so:</p>
+		<br />
+		<p class="explanation"><span class="normalFontOrange">1 0 0 1 0 1 1</span></p>
+		<br />
+		<p class="explanation">And voila!</p>
+		<br />
+		<p class="explanation">We have the binary expression for the decimal value <span class="normalFont">75</span>!</p>
+		<br />
+		<p class="explanation">To go back to top of the page, click <a href="#top" class="bottomLink"> here</a></p>
+		
+		<br />
+		<br />
+		
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		
+		<h3 id="step2" class="miniTitle">Part 2: Decimal-to-Octal</h3>
+		<p class="explanation">To manually convert a decimal value to an octal expression, the same technique shown above for converting
+		to binary is used (this time dividing by <span class="normalFont">8</span> instead of <span class="normalFont">2</span>).</p>
+		
+		<br />
+		
+		<p class="explanation">Let's illustrate this with the decimal value <span class="normalFont">523</span>:</p>
+		
+		<br />
+		
+		<p class="explanation"><span class="normalFont">523 / 8 = 65</span></p>
+		<p class="explanation"> ---> remainder of the division = <span class="normalFontOrange">3</span></p> 
+		<p class="explanation">      (because (<span class="normalFont">65 x 8</span>) <span class="normalFont">+ 3 = 523</span>)</p>
+		
+		<br />
+		
+		<p class="explanation"><span class="normalFont">65 / 8 = 8</span></p> 
+		<p class="explanation"> ---> remainder of the division = <span class="normalFontOrange">1</span></p>
+		
+		<br />
+		
+		<p class="explanation"><span class="normalFont">8 / 8 = 1</span></p>
+		<p class="explanation"> ---> remainder of the division = <span class="normalFontOrange">0</span></p>
+		
+		<br />
+		
+		<p class="explanation"><span class="normalFont">1 / 8 = 0</span></p> 
+		<p class="explanation"> ---> remainder of the division = <span class="normalFontOrange">1</span></p>
+		<p class="explanation">      (because (<span class="normalFont">0 x 8</span>)<span class="normalFont"> + 1 = 1</span>)</p>
+		
+		<br />
+		
+		<p class="explanation">As soon as the division reaches<span class="normalFont"> 0 </span>, <span class="colourRed">we stop!</span></p>
+		<br />
+		<p class="explanation">Let's read all the remainder values from top to bottom:</p>
+		<br />
+		<p class="explanation"><span class="normalFontOrange">3 1 0 1</span></p>
+		<br />
+		<p class="explanation">Now let's <span class="underline">invert</span> the order of these numbers, as so:</p>
+		<br />
+		<p class="explanation"><span class="normalFontOrange">1 0 1 3</span></p>
+		<br />
+		<p class="explanation">And voila!</p>
+		<br />
+		<p class="explanation">You have the octal expression for the decimal value <span class="normalFont">523</span>!</p>
+		<br />
+		<p class="explanation">To go back to top of the page, click <a href="#top" class="bottomLink"> here</a></p>
+		
+		<br />
+		<br />
+		
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+		
+		<h3 id="step3" class="miniTitle">Part 3: Decimal-to-Hexadecimal</h3>
+		
+		<p class="explanation">To manually convert a decimal value to a hexadecimal expression, the techniques used are slightly different
+		from the first two shown above.</p>
+		<br />
+		<p class="explanation">Indeed, if binary expressions are restricted to <span class="normalFont">0</span>s and <span class="normalFont">1</span>s,
+		and octal expressions do not allow <span class="normalFont">8</span>s or <span class="normalFont">9</span>s, hexadecimal expressions 
+		on the contrary have <span class="underline">added</span> characters, namely: all digits from <span class="normalFont">0</span> to 
+		<span class="normalFont">9</span>, but also all letters from <span class="normalFont">A</span> to<span class="normalFont">
+		F</span> (either in uppercase or lowercase).</p>
+		<br />
+		<p class="explanation">The decimal value for each of these 15 characters is as follows:</p>
+		
+		<br />
+		
+		<ul id="hexTable" class="superman">
+			<li>character <span class="normalFont">0<sub>16</sub> = 0<sub>10</sub></span></li>
+			<li>character <span class="normalFont">1<sub>16</sub> = 1<sub>10</sub></span></li>
+			<li>character <span class="normalFont">2<sub>16</sub> = 2<sub>10</sub></span></li>
+			<li>character <span class="normalFont">3<sub>16</sub> = 3<sub>10</sub></span></li>
+			<li>character <span class="normalFont">4<sub>16</sub> = 4<sub>10</sub></span></li>
+			<li>character <span class="normalFont">5<sub>16</sub> = 5<sub>10</sub></span></li>
+			<li>character <span class="normalFont">6<sub>16</sub> = 6<sub>10</sub></span></li>
+			<li>character <span class="normalFont">7<sub>16</sub> = 7<sub>10</sub></span></li>
+			<li>character <span class="normalFont">8<sub>16</sub> = 8<sub>10</sub></span></li>
+			<li>character <span class="normalFont">9<sub>16</sub> = 9<sub>10</sub></span></li>
+			<li>character <span class="normalFont">A<sub>16</sub> = 10<sub>10</sub></span></li>
+			<li>character <span class="normalFont">B<sub>16</sub> = 11<sub>10</sub></span></li>
+			<li>character <span class="normalFont">C<sub>16</sub> = 12<sub>10</sub></span></li>
+			<li>character <span class="normalFont">D<sub>16</sub> = 13<sub>10</sub></span></li>
+			<li>character <span class="normalFont">E<sub>16</sub> = 14<sub>10</sub></span></li>
+			<li>character <span class="normalFont">F<sub>16</sub> = 15<sub>10</sub></span></li>
+		</ul>
+		
+		<br />
+		<p class="info">Still unsure about those little subtype numbers added at the end of every value?
+		Click <a href="subtypes.html"><span class="underlineYellow">here</span></a> to know more!</p>
+		
+		
+		<p class="explanation">Let's illustrate this with the decimal value <span class="normalFont">7562</span>:</p>
+		
+		<br />
+		
+		<p class="explanation"><span class="normalFont">7562 / 16 = 472</span></p>
+		<p class="explanation"> ---> remainder of the division = <span class="normalFontOrange">10</span></p> 
+		<p class="explanation">      (because (<span class="normalFont">472 x 16</span>) <span class="normalFont">+ 10 = 7562</span>)</p>
+		<p class="explanationLittleRed"> Hold on! We can see in the hexadecimal <a href="#hexTable" class="linkToTable">table
+		</a> that decimal <span class="normalFont">10<sub class="used">10</sub></span> is equivalent to <span class="normalFont">A<sub class="used">16</sub></span>!</p>
+		<p class="explanation"> ---> therefore: remainder of the division = <span class="normalFontOrange">A</span></p> 
+		
+		<br />
+		
+		<p class="explanation"><span class="normalFont">472 / 16 = 29</span></p> 
+		<p class="explanation"> ---> remainder of the division = <span class="normalFontOrange">8</span></p>
+		
+		<br />
+		
+		<p class="explanation"><span class="normalFont">29 / 8 = 1</span></p>
+		<p class="explanation"> ---> remainder of the division = <span class="normalFontOrange">13</span></p>
+		<p class="explanationLittleRed"> Hold on! We can see in the hexadecimal <a href="#hexTable" class="linkToTable">table
+		</a> that decimal <span class="normalFont">13<sub class="used">10</sub></span> is equivalent to <span class="normalFont">D<sub class="used">16</sub></span>!</p>
+		<p class="explanation"> ---> therefore: remainder of the division = <span class="normalFontOrange"> D</span></p> 
+		
+		<br />
+		
+		<p class="explanation"><span class="normalFont">1 / 16 = 0</span></p> 
+		<p class="explanation"> ---> remainder of the division = <span class="normalFontOrange">1</span></p>
+		<p class="explanation">      (because (<span class="normalFont">0 x 16</span>)<span class="normalFont"> + 1 = 1</span>)</p>
+		
+		<br />
+		
+		<p class="explanation">As soon as the division reaches<span class="normalFont"> 0 </span>, <span class="colourRed">we stop!</span></p>
+		<br />
+		<p class="explanation">Let's read all the remainder values from top to bottom:</p>
+		<br />
+		<p class="explanation"><span class="normalFontOrange">A 8 D 1</span></p>
+		<br />
+		<p class="explanation">Now let's <span class="underline">invert</span> that line, as so:</p>
+		<br />
+		<p class="explanation"><span class="normalFontOrange">1 D 8 A</span></p>
+		<br />
+		<p class="explanation">And voila!</p>
+		<br />
+		<p class="explanation">We have the hexadecimal expression for the decimal value <span class="normalFont">7562</span>!</p>
+		<br />
+		<p class="explanation">To go back to top of the page, click <a href="#decimalConversion" class="bottomLink">here</a>.</p>
+		<br />
+		
+		<img src="../images/goodSpace3.png" alt="spaceship!" title="I'm flying into space guys!" id="spaceman" />
+		
+		<br/>
+		<br/>
+		
+		<a id="previousPage" href="converter.html">
+		<img src="../images/previousButton.png" alt="click to go to the CONVERTER page" title="click to go to the CONVERTER page!" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+		
+		<a id="homePage" href="../converterHomePage.html">
+		<img src="../images/homePageButton.png" alt="click to go to the MENU page" title="click to go to the MENU page!" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+		
+		<a id="nextPage" href="binary.html">
+		<img src="../images/nextButton.png" alt="click to go to the BINARY page" title="click to go to the BINARY page!" /></a>
+
+
+		<br/>
+		<br />
+		<br />
+		
+	</body>
+	
+</html>

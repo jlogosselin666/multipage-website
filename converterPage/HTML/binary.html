@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		 <!--[if lt IE 9]>
+			<script src="../html5shiv-master/dist/html5shiv.js"></script>
+		 <![endif]-->
+		<title>Online converter & tutorial for decimal, binary, octal and hexadecimal values</title>
+		<link href="../CSS/cssFile.css" rel="stylesheet"/>
+		<link href="../CSS/navigationButtons.css" rel="stylesheet"/>
+		<!-- <link href="../CSSfiles/cssAllPlatform.css" type="text/css" rel="stylesheet" media="only screen and (max-device-width: 480px)"/> -->
+		<link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here" rel="stylesheet"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+	
+	<body>
+
+
+		<!-- *****************************************************************************************************************************
+		*																														         *
+		*																														         *
+		*									PART 2: BINARY CONVERSION															         *
+		*																														         *
+		*																														         *
+		***************************************************************************************************************************** -->
+		
+		<!-- <h2 class="bigTitle" id="binaryConversion">Binary conversion</h2> -->
+		<h1 class="mainTitle" id="binaryConversion">Binary conversion</h1>
+		<br/>
+		<br/>
+		<br />
+
+		<p class="explanation">Remember how we ended the Decimal-to-Binary conversion?</p>
+		<br />
+		<p class="explanation">That's right: by <span class="underline">inverting</span> the order of all those <span class="normalFont">0</span>s
+		and <span class="normalFont">1</span>s.</p>
+		<br />
+		<p class="explanation">If the true scientific reason behind this inversion is of no real concern to us, what we <span class="colourRed">
+		must</span> remember is the notion of <span class="greenChangeFont">INDICES</span>.</p>
+		<br />
+		<p class="explanation">Let's look at the following binary expression:</p>
+		<br />
+		<p class="explanation"><span class="normalFontOrange">1  0  1  0  0  0  0  1  1</span></p>
+		<br />
+		<p class="explanation">An <span class="greenChangeFont">INDEX</span> is allocated to each of these numbers, with the <span class="underline">rightmost</span>
+		number bearing the index <span class="normalFont">0</span>.</p>
+		<br />
+		<p class="explanation">The binary expression with all its <span class="greenChangeFont">INDICES</span> will now look like this:</p>
+		<br />
+		<p class="explanation"><span class="normalFontOrange">1<sub>8</sub>   0<sub>7</sub>   1<sub>6</sub>   0<sub>5</sub>   0<sub>4</sub>   0<sub>3</sub>   0<sub>2</sub>   1<sub>1</sub>   1<sub>0</sub></span></p>
+		<br />
+		<p class="explanation">So what on earth are these <span class="greenChangeFont">INDICES</span> for???</p>
+		<br />
+		<p class="explanation">Simple: each of these <span class="greenChangeFont">INDICES</span> is used as an exponent of <span class="normalFont">2</span> 
+		(since binary expressions consist of <span class="normalFontOrange">BASE 2</span> values).</p>
+		<br />
+		<p class="explanation">Let's illustrate this with an example.</p>
+		<br />
+		<p class="explanation">We start with the <span class="underline">leftmost</span> digit: </p>
+		<br />
+		<p class="explanation"><span class="specialNormalFontOrange">1<sub class="used">8</sub></span>   <span class="normalFontOrange">0<sub>7</sub>   1<sub>6</sub>   0<sub>5</sub>   0<sub>4</sub>   0<sub>3</sub>   0<sub>2</sub>   1<sub>1</sub>   1<sub>0</sub></span></p>
+		<br />
+		<p class="explanation">...before following these simple steps:</p>
+		
+		<br />
+		
+		<p class="explanation">"Is the binary digit a <span class="normalFont">1</span>?"</p>
+		<p class="explanation"><span class="specialNormalFontOrange">1<sub class="used">8</sub></span>   <span class="normalFontOrange">0<sub>7</sub>   1<sub>6</sub>   0<sub>5</sub>   0<sub>4</sub>   0<sub>3</sub>   0<sub>2</sub>   1<sub>1</sub>   1<sub>0</sub></span></p>
+		<p class="explanationHexGreen">Yes!</p>
+		<p class="explanation">Therefore we do the following operation:</p>
+		<p class="explanation"><span class="normalFont">2<sup>8</sup></span> = <span class="normalFontOrange">256</span></p>
+		
+		<br />
+		
+		<p class="explanation">"Is the next binary digit a <span class="normalFont">1</span>?"</p>
+		<p class="explanation"><span class="normalFontOrange">1<sub>8</sub></span>   <span class="specialNormalFontOrange">0<sub class="used">7</sub></span>   <span class="normalFontOrange">1<sub>6</sub>   0<sub>5</sub>   0<sub>4</sub>   0<sub>3</sub>   0<sub>2</sub>   1<sub>1</sub>   1<sub>0</sub></span></p>
+		<p class="explanation">No!</p>
+		<p class="explanation">We move on.</p>
+		
+		<br />
+		
+		<p class="explanation">"Is the next binary digit a <span class="normalFont">1</span>?"</p>
+		<p class="explanation"><span class="normalFontOrange">1<sub>8</sub>   0<sub>7</sub></span>   <span class="specialNormalFontOrange">1<sub class="used">6</sub></span>   <span class="normalFontOrange">0<sub>5</sub>   0<sub>4</sub>   0<sub>3</sub>   0<sub>2</sub>   1<sub>1</sub>   1<sub>0</sub></span></p>
+		<p class="explanationHexGreen">Yes!</p>
+		<p class="explanation">Therefore we do the following operation:</p>
+		<p class="explanation"><span class="normalFont">2<sup>6</sup></span> = <span class="normalFontOrange">64</span></p>
+		
+		<br />
+		
+		<p class="explanation">"Is the next binary digit a <span class="normalFont">1</span>?"</p>
+		<p class="explanation"><span class="normalFontOrange">1<sub>8</sub>   0<sub>7</sub>   1<sub>6</sub></span>   <span class="specialNormalFontOrange">0<sub class="used">5</sub></span>   <span class="normalFontOrange">0<sub>4</sub>   0<sub>3</sub>   0<sub>2</sub>   1<sub>1</sub>   1<sub>0</sub></span></p>
+		<p class="explanation">No!</p>
+		<p class="explanation">We move on.</p>
+		
+		<br />
+		
+		<p class="explanation">"Is the next binary digit a <span class="normalFont">1</span>?"</p>
+		<p class="explanation"><span class="normalFontOrange">1<sub>8</sub>   0<sub>7</sub>   1<sub>6</sub>   0<sub>5</sub></span>   <span class="specialNormalFontOrange">0<sub class="used">4</sub></span>   <span class="normalFontOrange">0<sub>3</sub>   0<sub>2</sub>   1<sub>1</sub>   1<sub>0</sub></span></p>
+		<p class="explanation">No!</p>
+		<p class="explanation">We move on.</p>
+		
+		<br />
+		
+		<p class="explanation">"Is the next binary digit a <span class="normalFont">1</span>?"</p>
+		<p class="explanation"><span class="normalFontOrange">1<sub>8</sub>   0<sub>7</sub>   1<sub>6</sub>   0<sub>5</sub>   0<sub>4</sub></span>   <span class="specialNormalFontOrange">0<sub class="used">3</sub></span>   <span class="normalFontOrange">0<sub>2</sub>   1<sub>1</sub>   1<sub>0</sub></span></p>
+		<p class="explanation">No!</p>
+		<p class="explanation">We move on (I think you're getting the idea...)</p>
+		
+		<br />
+		
+		<p class="explanation">"Is the next binary digit a <span class="normalFont">1</span>?"</p>
+		<p class="explanation"><span class="normalFontOrange">1<sub>8</sub>   0<sub>7</sub>   1<sub>6</sub>   0<sub>5</sub>   0<sub>4</sub>   0<sub>3</sub></span>   <span class="specialNormalFontOrange">0<sub class="used">2</sub></span>   <span class="normalFontOrange">1<sub>1</sub>   1<sub>0</sub></span></p>
+		<p class="explanation">No!</p>
+		<p class="explanation">We move on (yup, I think you do...)</p>
+		
+		<br />
+		
+		<p class="explanation">"Is the next binary digit a <span class="normalFont">1</span>?"</p>
+		<p class="explanation"><span class="normalFontOrange">1<sub>8</sub>   0<sub>7</sub>   1<sub>6</sub>   0<sub>5</sub>   0<sub>4</sub>   0<sub>3</sub>   0<sub>2</sub></span>   <span class="specialNormalFontOrange">1<sub class="used">1</sub></span>   <span class="normalFontOrange">1<sub>0</sub></span></p>
+		<p class="explanationHexGreen">Yes!</p>
+		<p class="explanation">Therefore we do the following operation:</p>
+		<p class="explanation"><span class="normalFont">2<sup>1</sup></span> = <span class="normalFontOrange">2</span></p>
+		
+		<br />
+		
+		<p class="explanation">"Finally: is the next binary digit a <span class="normalFont">1</span>?"</p>
+		<p class="explanation"><span class="normalFontOrange">1<sub>8</sub>   0<sub>7</sub>   1<sub>6</sub>   0<sub>5</sub>   0<sub>4</sub>   0<sub>3</sub>   0<sub>2</sub>   1<sub>1</sub></span>   <span class="specialNormalFontOrange">1<sub class="used">0</sub></span></p>
+		<p class="explanationHexGreen">Yes!</p>
+		<p class="explanation">Therefore we do the following operation:</p>
+		<p class="explanation"><span class="normalFont">2<sup>0</sup></span> = <span class="normalFontOrange">1</span></p>
+		
+		<br />
+		
+		<p class="explanation">We now come to the exciting part: we add all of the values found above:</p>
+		<br />
+		<p class="explanation"><span class="normalFontOrange">256 + 64 + 2 + 1 = 323</span></p>
+		<br />
+		<p class="explanation">Recap time!</p>
+		<br />
+		<p class="explanation">Converting a binary expression to a decimal value consists of the following three steps:</p>
+		<br />
+		
+		<ol class="explanation">
+			<li>assign an index to every digit of the binary expression (starting with index <span class="normalFont">0</span> 
+			on the <span class="underline">rightmost</span> digit)</li>
+			<li>use that index number as an exponent of <span class="normalFont">2</span> everytime the binary digit is a 
+			<span class="normalFont">1</span></li>
+			<li>finally, add all the values found, which gives you the decimal value of the binary expression!</li>
+		</ol>
+		
+		<br />
+		
+		<p class="explanation">In this chapter, we only looked at how to convert a binary expression to a decimal.</p>
+		<br />
+		<p class="explanation">To convert to the other two sorts (octal & hexadecimal), simply use the decimal result of your
+		binary-to-decimal conversion and follow the techniques illustrated in the Decimal chapter:</p>
+
+		<br />
+		
+		<ul class="explanation" id="surf">
+			<li><a href="decimal.html#step2"><span class="underlineYellow">Decimal-to-Octal</span></a></li>
+			<li><a href="decimal.html#step3"><span class="underlineYellow">Decimal-to-Hexadecimal</span></a></li>
+			
+		</ul>
+		<br />
+		<p class="explanation">To go back to top of the page, click <a href="#binaryConversion" class="bottomLink">here</a>.</p>
+
+		<br />
+		<br />		
+		
+		<img src="../images/football.png" alt="Hey you!" title="I love conversions!!" id="goodgirl" />
+		
+		<br />
+		<br />
+		
+		<a id="previousPage" href="decimal.html">
+		<img src="../images/previousButton.png" alt="click to go to the DECIMAL page" title="click to go to the DECIMAL page!" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+		
+		<a id="homePage" href="../converterHomePage.html">
+		<img src="../images/homePageButton.png" alt="click to go to the MENU page" title="click to go to the MENU page!" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+		
+		<a id="nextPage" href="octal.html">
+		<img src="../images/nextButton.png" alt="click to go to the OCTAL page" title="click to go to the OCTAL page!" /></a>
+		
+
+		<br />
+		<br />
+		<br />
+		
+	</body>
+	
+</html>

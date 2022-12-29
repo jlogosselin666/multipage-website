@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		 <!--[if lt IE 9]>
+			<script src="../html5shiv-master/dist/html5shiv.js"></script>
+		 <![endif]-->
+		<title>Tutorial for converting octal values to decimal, binary and hexadecimal</title>
+		<link href="../CSS/cssFile.css" rel="stylesheet" />
+		<link href="../CSS/navigationButtons.css" rel="stylesheet" />
+		<!-- <link href="../CSSfiles/cssAllPlatform.css" type="text/css" rel="stylesheet" media="only screen and (max-device-width: 480px)" /> -->
+		<link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here" rel="stylesheet"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+	
+	<body>
+
+		<!-- *****************************************************************************************************************************
+		*																														         *
+		*																														         *
+		*									PART 3: OCTAL CONVERSION															         *
+		*																														         *
+		*																														         *
+		***************************************************************************************************************************** -->
+		
+		<h1 class="mainTitle" id="octalConversion">Octal conversion</h1>
+		<br/>
+		<br/>
+		<br/>
+		<p class="explanation">Essentially, the same logic seen above with binary expressions applies to octal expressions,
+		albeit with an added characteristic: the index again becomes the exponent (this time of <span class="normalFont">8</span>), but the result
+		is then multiplied with the number to which that index belongs!</p>
+		
+		<br />
+		
+		<p class="explanation">'Nough said: an example will clarify things!</p>
+		
+		<br />
+		
+		<p class="explanation">Say we have the octal expression:</p> 
+		
+		<br />
+		
+		<p class="explanation"><span class="normalFontOrange">7  1  2  0  3  6</span></p>
+		
+		<br />
+		
+		<p class="explanation">With <span class="greenChangeFont">INDICES</span>, the octal expression now looks like this:</p>
+		
+		<br />
+		
+		<p class="explanation"><span class="normalFontOrange">7<sub>5</sub>   1<sub>4</sub>   2<sub>3</sub>   0<sub>2</sub>   3<sub>1</sub>   6<sub>0</sub></span></p>
+		
+		<br />
+		
+		<p class="explanation">Again, let us start with the <span class="underline">leftmost</span> digit: </p>
+		
+		<br />
+		
+		<p class="explanation"><span class="specialNormalFontOrange">7<sub class="used">5</sub></span>   <span class="normalFontOrange">1<sub>4</sub>   2<sub>3</sub>   0<sub>2</sub>   3<sub>1</sub>   6<sub>0</sub></span></p>
+
+		<br />
+		
+		<p class="explanation">First, we set the index <span class="normalFont">5</span> as exponent to base <span class="normalFont">8</span>:</p>
+		<p class="explanation"><span class="normalFont">8<sup>5</sup> = 32,768</span></p>
+		<p class="explanation">We then multiply this value by the number to which the "index/exponent" is attached:</p>
+		<p class="explanation"><span class="normalFont">32,768 x 7 = </span><span class="normalFontOrange">229,376</span></p>
+		
+		<br />
+		
+		<p class="explanation">We move on to the next digit: </p>
+		
+		<br />
+		
+		<p class="explanation"><span class="normalFontOrange">7<sub>5</sub></span>   <span class="specialNormalFontOrange">1<sub class="used">4</sub></span>   <span class="normalFontOrange">2<sub>3</sub>   0<sub>2</sub>   3<sub>1</sub>   6<sub>0</sub></span></p>
+		
+		<br />
+		
+		<p class="explanation">We set the index <span class="normalFont">4</span> as exponent to base <span class="normalFont">8</span>:</p>
+		<p class="explanation"><span class="normalFont">8<sup>4</sup> = 4,096</span></p>
+		<p class="explanation">We then multiply this value by the number to which the "index/exponent" is attached:</p>
+		<p class="explanation"><span class="normalFont">4,096 x 1 = </span><span class="normalFontOrange">4,096</span></p>		
+		
+		<br />
+		
+		<p class="explanation">We move on to the next digit: </p>
+		
+		<br />
+		
+		<p class="explanation"><span class="normalFontOrange">7<sub>5</sub>   1<sub>4</sub></span>   <span class="specialNormalFontOrange">2<sub class="used">3</sub></span>   <span class="normalFontOrange">0<sub>2</sub>   3<sub>1</sub>   6<sub>0</sub></span></p>
+		
+		<br />
+		
+		<p class="explanation">Again, we set the index <span class="normalFont">3</span> as exponent to base <span class="normalFont">8</span>:</p>
+		<p class="explanation"><span class="normalFont">8<sup>3</sup> = 512</span></p>
+		<p class="explanation">We then multiply this value by the number to which the "index/exponent" is attached:</p>
+		<p class="explanation"><span class="normalFont">512 x 2 = </span><span class="normalFontOrange">1,024</span></p>
+
+		<br />
+
+		<p class="explanation">We move on to the next digit: </p>
+		
+		<br />
+		
+		<p class="explanation"><span class="normalFontOrange">7<sub>5</sub>   1<sub>4</sub>   2<sub>3</sub></span>   <span class="specialNormalFontOrange">0<sub class="used">2</sub></span>   <span class="normalFontOrange">3<sub>1</sub>   6<sub>0</sub></span></p>
+		
+		<br />
+		
+		<p class="explanation">The index <span class="normalFont">2</span> is set as exponent to base <span class="normalFont">8</span>:</p>
+		<p class="explanation"><span class="normalFont">8<sup>2</sup> = 64</span></p>
+		<p class="explanation">We then multiply this value by the number to which the "index/exponent" is attached:</p>
+		<p class="explanation"><span class="normalFont">64 x 0 = </span><span class="normalFontOrange">0</span></p>	
+
+		<br />
+		
+		<p class="explanation">We move on to the next digit: </p>
+		
+		<br />
+		
+		<p class="explanation"><span class="normalFontOrange">7<sub>5</sub>   1<sub>4</sub>   2<sub>3</sub>   0<sub>2</sub></span>   <span class="specialNormalFontOrange">3<sub class="used">1</sub></span>   <span class="normalFontOrange">6<sub>0</sub></span></p>
+		
+		<br />
+		
+		<p class="explanation">The index <span class="normalFont">1</span> is set as exponent to base <span class="normalFont">8</span>:</p>
+		<p class="explanation"><span class="normalFont">8<sup>1</sup> = 8</span></p>
+		<p class="explanation">We then multiply this value by the number to which the "index/exponent" is attached:</p>
+		<p class="explanation"><span class="normalFont">8 x 3 = </span><span class="normalFontOrange">24</span></p>	
+
+		<br />
+		
+		<p class="explanation">We move on to the last and final digit: </p>
+		
+		<br />
+		
+		<p class="explanation"><span class="normalFontOrange">7<sub>5</sub>   1<sub>4</sub>   2<sub>3</sub>   0<sub>2</sub>   3<sub>1</sub></span>   <span class="specialNormalFontOrange">6<sub class="used">0</sub></span></p>
+		
+		<br />
+		
+		<p class="explanation">The index <span class="normalFont">0</span> is set as exponent to base <span class="normalFont">8</span>:</p>
+		<p class="explanation"><span class="normalFont">8<sup>0</sup> = 1</span></p>
+		<p class="explanation">We then multiply this value by the number to which the "index/exponent" is attached:</p>
+		<p class="explanation"><span class="normalFont">6 x 1 = </span><span class="normalFontOrange">6</span></p>			
+		
+		<p class="explanation">We now add all of the values found above:</p>
+		<br />
+		<p class="explanation"><span class="normalFontOrange">229,376 + 4,096 + 1024 + 0 + 24 + 6 = 234,526</span></p>
+		<br />
+		<p class="explanation">Recap time!</p>
+		<br />
+		<p class="explanation">Converting an octal expression to a decimal value consists of the following steps:</p>
+		<br />
+		<ol class="explanation">
+			<li>assign an index to every digit of the octal expression (starting with index <span class="normalFont">0</span> 
+			on the <span class="underline">rightmost</span> digit)</li>
+			<li>use that index number as an exponent, this time of base <span class="normalFont">8</span></li>
+			<li>multiply the result with the number to which is attached the "index/exponent"</li>
+			<li>finally, add all the values found, which gives you the decimal value of the octal expression!</li>
+		</ol>
+
+		<br />
+		
+		<p class="explanation">In this chapter, we only looked at how to convert an octal expression to a decimal.</p>
+		<br />
+		<p class="explanation">To convert to the other two sorts (binary & hexadecimal), simply use the decimal result of your
+		octal-to-decimal conversion and follow the techniques illustrated in the Decimal chapter:</p>
+		
+		<br />
+		
+		<ul class="explanation" id="surf">
+			<li><a href="decimal.html#step1"><span class="underlineYellow">Decimal-to-Binary</span></a></li>
+			<li><a href="decimal.html#step3"><span class="underlineYellow">Decimal-to-Hexadecimal</span></a></li>
+			
+		</ul>
+		<br />
+		<p class="explanation">To go back to top of the page, click <a href="#octalConversion" class="bottomLink">here</a>.</p>
+
+		<br />
+
+		<img src="../images/finalAlien.png" alt="alien" title="Don't mess with this dude!" id="goodAlien" />
+		<br />
+		<br />
+		<br />
+		
+		<a id="previousPage" href="binary.html">
+		<img src="../images/previousButton.png" alt="click to go to the BINARY page" title="click to go to the BINARY page!" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+		
+		<a id="homePage" href="../converterHomePage.html">
+		<img src="../images/homePageButton.png" alt="click to go to the MENU page" title="click to go to the MENU page!" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+		
+		<a id="nextPage" href="hexadecimal.html">
+		<img src="../images/nextButton.png" alt="click to go to the HEXADECIMAL page" title="click to go to the HEXADECIMAL page!" /></a>
+		
+		<br />
+		<br />
+		<br />
+		
+	</body>
+	
+</html>

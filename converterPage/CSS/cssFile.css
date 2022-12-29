@@ -1,0 +1,539 @@
+body {
+	color: white;
+	font-family: 'Indie Flower', cursive;
+	font-size: 30px;
+	background: #708090 url("../images/lola.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}	
+	
+@media only screen and (max-width: 320px){
+	background: none !important;
+}
+
+@media only screen and (max-width: 320px){
+	background: blue;
+}
+
+h1.mainTitle{
+	font-family: 'Clicker Script', cursive;
+	text-align: center;
+	font-size: 110px;
+	margin-top: -12px;
+	margin-bottom: -12px;
+	padding-bottom: -2px;
+}
+
+h1#subtypes{
+	
+	margin-left: -120px;	
+}
+
+h1#top{
+
+	margin-top: 5px;
+	color: #adff2f;
+	font-size: 90px;
+	border: 2px solid #adff2f;
+	width: 800px;
+	border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	overflow: auto;
+
+}
+
+input{
+	color: white;
+}
+
+span{
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 18px;
+}
+
+sub{
+	color: #00FFFF;
+}
+
+sub.used{
+	color: black;
+}
+
+footer{
+	text-align: center;
+	font-family: Arial, Verdana, sans-serif;
+font-size: 16px;
+}
+
+/**************************************************************************************************************************
+**************************************************************************************************************************
+**************************************************************************************************************************
+**************************************************************************************************************************
+**************************************************************************************************************************
+**************************************************************************************************************************/
+
+.inputTitle{
+	margin-left: 320px;	
+}
+
+.info{
+	font-size: 24px;
+	margin-left: 340px;
+	width: 400px;
+	margin-top: -13px;
+}
+
+.bigTitle{
+	font-family: 'Press Start 2P', cursive;
+	font-size: 20px;
+	text-align: center;
+	color: red;
+	background-color: black;
+	/*margin: 10px auto 10px auto;*/
+	margin-left: 320px;
+	padding-top: 8px;
+	width: 526px;
+	height: 30px;
+	border: solid red;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+overflow: auto;		
+}
+
+.bigTitleSubtype{
+	font-family: 'Press Start 2P', cursive;
+	font-size: 20px;
+	text-align: center;
+	color: red;
+	background-color: black;
+	/*margin: 10px auto 10px auto;*/
+	margin-left: 352px;
+	padding-top: 8px;
+	width: 526px;
+	height: 30px;
+	border: solid red;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+overflow: auto;		
+}
+
+.miniTitle{
+	margin-left: 310px;
+	color: #ff69b4;
+	border: 2px solid #ff69b4;
+	width: 400px;
+	padding-left: 13px;
+	border-radius: 40px;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	/* margin-left: -84px; */
+}
+
+#step2{
+	width: 375px;
+}
+
+#step3{
+	width: 478px;
+}
+
+.link{
+	color: yellow;	
+}
+
+.info{
+	margin-left: 421px;
+	margin-top: -12px;
+}
+
+.bottomLink{
+	color: yellow;
+}
+
+.linkToTable{
+	color: #8a2be2;
+}
+
+.orange{
+	color: orange;
+}
+
+.yellowLink{
+	color: yellow;
+}
+
+ul#spongeBob{
+	list-style-image: url("../images/miniSpongeBob.png");
+}
+
+ul.superman{
+	list-style-image: url("../images/superman.png");
+}
+
+ul#funnyDino{
+	list-style-image: url("../images/funnyDino.png");
+}
+
+ul#surf{
+	list-style-image: url("../images/surf.png");
+}
+
+ul.rope{
+	list-style-image: url("../images/rope.png");
+}
+
+ul.bubbles{
+	list-style-image: url("../images/bubbles.png");
+}
+
+ul#coolSkater{
+	list-style-image: url("../images/skater.png");
+}
+
+/**************************************************************************************************************************
+**************************************************************************************************************************
+**************************************************************************************************************************
+**************************************************************************************************************************
+**************************************************************************************************************************
+**************************************************************************************************************************/
+
+#firstInputTitle{
+	margin-top: 0px;
+}
+	
+#myInputDec{
+	width: 251px;
+	font-size: 18px;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	background: transparent;	
+}
+
+#myInputDec:hover{
+	color: black;
+	background-color: #87ceeb;
+	border: 5px solid red;
+	height: 17px;
+	margin-right: -10px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+overflow: auto;	
+}
+
+#myInputBin{
+	width: 262px;
+	font-size: 18px;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	background: transparent;	
+}
+
+#myInputBin:hover{
+	color: black;
+	background-color: #87ceeb;
+	border: 5px solid red;
+	height: 17px;
+	margin-right: -10px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+overflow: auto;	
+}
+
+#myInputOct{
+	width: 266px;
+	font-size: 18px;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	background: transparent;	
+}
+
+#myInputOct:hover{
+	color: black;
+	background-color: #87ceeb;
+	border: 5px solid red;
+	height: 17px;
+	margin-right: -10px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+overflow: auto;	
+}
+
+#myInputHex{
+	width: 222px;
+	font-size: 18px;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	background: transparent;	
+}
+
+#myInputHex:hover{
+	color: black;
+	background-color: #87ceeb;
+	border: 5px solid red;
+	height: 17px;
+	margin-right: -10px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+overflow: auto;	
+}
+
+#decToBin, #decToOct, #decToHex, #binToDec, #binToOct, #binToHex, #octToDec, #octToBin, #octToHex, #hexToDec, #hexToBin, #hexToOct{
+	margin-left: 428px;
+}
+
+#exception{
+	margin-left: 310px;
+}
+
+
+#stickman{
+	width: 160px;
+	height: 235px;
+	display: block;
+margin-top: 10px;
+margin-left: 720px;
+margin-bottom: 10px;
+}
+
+#spaceman{
+	margin-left: 675px;
+}
+
+#d1{
+	margin-left: 300px;
+}
+
+#d2{
+	margin-left: 650px;
+}
+
+#goodgirl{
+	margin-left: 314px;
+}
+
+#goodAlien{
+	margin-left: 660px;
+}
+
+#sleepingMan{
+	margin-left: 340px;
+}
+
+#firstInList{
+	margin-top: 10px;
+}
+	
+.explanation{
+	/*
+	font-family: 'Indie Flower', cursive;
+	font-size: 30px;
+	*/
+	margin-left: 320px;
+	width: 570px;
+	margin-top: -5px;
+margin-bottom: -5px;	
+}
+
+#noteOnConverter{
+	
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 15px;
+	color: white;
+	text-align: center;
+}
+
+#hexTable{
+	margin-left: 350px;
+	width: 570px;
+	margin-top: -5px;
+margin-bottom: -5px;	
+}
+
+.explanationYellow{
+	color: yellow;
+	margin-left: 350px;
+	width: 570px;
+	margin-top: -5px;
+margin-bottom: -5px;	
+}
+
+.explanationRed{
+	color: red;
+	font-weight: bold;
+	background-color: white;
+	margin-left: 350px;
+	width: 432px;
+	height: 180px;
+	margin-top: -5px;
+	margin-bottom: -5px;
+	padding-left: 10px;
+	padding-top: 5px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+overflow: auto;	
+}
+
+.explanationLittleRed{
+	color: red;
+	font-weight: bold;
+	background-color: white;
+	margin-left: 350px;
+	width: 465px;
+	height: 138px;
+	margin-top: -5px;
+	margin-bottom: -5px;
+	padding-left: 9px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+overflow: auto;	
+}
+
+.explanationHexGreen{
+	color: #7fff00;
+	font-weight: bold;
+	margin-left: 330px;
+	width: 570px;
+	margin-top: -5px;
+margin-bottom: -5px;
+}
+
+.greenChangeFont{
+	color: #00FFFF;
+	font-family: Arial, Verdana, sans-serif;
+font-size: 18px;
+}
+
+#mainPage{
+	color: #00FFFF;
+	text-decoration: underline;
+}
+
+.normalFont{
+	font-family: Arial, Verdana, sans-serif;
+font-size: 26px;
+}
+
+.normalFontOrange{
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 26px;
+color: orange;
+}
+
+.specialNormalFontOrange{
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 26px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	overflow: auto;
+	color: black;
+	background-color: #fff8dc;
+padding: 2px 2px 2px 2px;
+}
+
+.colourRed{
+	color: red;
+	font-weight: bold;
+	font-family: 'Indie Flower', cursive;
+	font-size: 30px;
+	/*
+	font-family: 'Clicker Script', cursive;
+	font-size: 30px;
+	*/
+}
+
+
+.underline{
+	/*
+	font-family: 'Clicker Script', cursive;
+	font-size: 30px;
+	*/
+	font-family: 'Indie Flower', cursive;
+	font-size: 30px;
+	text-decoration: underline;
+}
+
+.underlineYellow{
+	color: yellow;
+	/* font-family: 'Clicker Script', cursive; 
+	font-size: 30px; */
+	font-family: 'Indie Flower', cursive;
+	font-size: 30px;
+	text-decoration: underline;	
+}
+
+#hexList{
+	text-align: center;
+}
+
+#lastStop{
+	color: #adff2f;
+	text-decoration: underline;
+}
+	
+#btnDec, #btnBin, #btnOct, #btnHex{
+	color: white;
+	background-color: green;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	overflow: auto;
+	color: white;
+  font-family: 'Clicker Script', cursive;
+  font-size: 25px;
+}
+
+#resetDec, #resetBin, #resetOct, #resetHex{
+	display: inline;
+	background-color: red;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	overflow: auto;
+	color: white;
+  font-family: 'Clicker Script', cursive;
+  font-size: 25px;
+}
+
+#endLine{
+	margin-left: 340px;
+}
+
+#writeEmail{
+	margin-left: 324px;
+	width: 590px;
+	color: black;
+	background-color: #add8e6;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 16px;
+	font-style: italic;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+overflow: auto;
+}
+
+#clickHere{
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 16px;
+	color: red;
+}
+

@@ -1,0 +1,82 @@
+body{
+	background: blue url("mainPic.jpg") no-repeat center center fixed;
+	color: black;
+	font-family: 'Lobster', cursive;
+	text-align: center;
+}
+
+h1{	
+	background-color: gold;
+	font-size: 100px;
+	padding: 5px;
+	padding-bottom: 33px;
+	width: 820px;
+	height: 100px;
+	border: solid black;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-width: 5px;
+	margin: auto;	
+}
+
+p{	
+	font-weight: bold;
+	font-size: 48px;
+}
+
+#goodResult{
+	color: green;
+	font-weight: bold;
+	font-size: 50px;
+	text-decoration: underline;	
+	margin-top: 100px;
+}
+
+#badResult{
+	color: red;
+	font-weight: bold;
+	font-size: 50px;
+	text-decoration: underline;	
+	margin-top: 100px;
+}
+
+#myInput{
+
+	font-size: 35px;
+	width: 500px;
+	color: black;
+	background-color: gold;
+	border: 5px solid black;
+	height: 30px;
+	margin-top: 20px;
+	margin-right: -10px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+overflow: auto;	
+}
+
+#checkButton{
+	font-family: 'Lobster', cursive;
+	background-color: blue;
+	color: white;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	overflow: auto;
+	color: white;
+	font-size: 32px;
+}
+
+#resetButton{
+	font-family: 'Lobster', cursive;
+	background-color: darkgreen;
+	color: white;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	overflow: auto;
+	color: white;
+	font-size: 32px;
+}

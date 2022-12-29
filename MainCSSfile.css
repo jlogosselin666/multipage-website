@@ -1,0 +1,116 @@
+body{
+	background: white url("workstation.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	color: black;
+	font-family: 'Permanent Marker', cursive;	
+}
+
+.main h1{
+    position: absolute;
+    top: 20%;
+    left: 63%;
+}
+
+img.underline{
+	position: absolute;
+    top: 30%;
+    left: 63%;
+width: 350px;
+height: 30px;	
+}
+
+a{
+	text-decoration: none;
+	font-size: 18px;
+	margin-top: 64px;
+	
+}
+
+img.one{
+	position: absolute;
+    top: 40%;
+    left: 60%;
+	margin-top: 30px;
+}	
+
+#one{
+	/*color: green;*/
+	color: black;
+	position: absolute;
+    top: 40%;
+    left: 63%;
+	margin-top: 30px;		
+}
+
+img.two{
+	position: absolute;
+    top: 53%;
+    left: 60%;
+	margin-top: 10px;
+}
+
+#two{
+	/*color: red;*/
+	color: black;
+	position: absolute;
+    top: 53%;
+    left: 63%;
+margin-top: 10px;	
+}
+
+img.three{
+	position: absolute;
+    top: 63%;
+    left: 60%;
+	margin-top: 10px;
+}
+
+#three{
+	/*color: blue;*/
+	color: black;
+	position: absolute;
+    top: 63%;
+    left: 63%;
+	margin-top: 10px;
+}
+
+
+#special{
+	color: black;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 82%;
+	position: absolute;
+	top: 60%;
+    left: 42%;	
+}
+
+#bubble{
+	width: 70px;
+	height: 40px;
+	position: absolute;
+    top: 68%;
+    left: 41.3%;
+}
+
+/*
+#special{
+	color: black;
+	font-family: 'Nunito Sans', sans-serif;
+	background-color: #C0C0C0;
+	padding: 7px;
+	border-radius: 7px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	overflow: auto;
+	position: absolute;
+    top: 56%;
+    left: 41.8%;
+}
+*/
+
+
+
+
+
+

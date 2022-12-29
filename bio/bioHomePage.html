@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>All about JL</title>
+		<meta name="author" content="Jean-Louis Gosselin"/>
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+		<link href="myCSS.css" rel="stylesheet"/>
+		<script src="projectScript.js"></script>		
+	</head>
+	
+	<body>
+		<h1>
+			Jean-Louis Gosselin's bio
+		</h1>
+
+		<div style="text-align: center;">
+
+			<img src="JLG.jpg" alt="Jean-Louis profile pic" style="width:110px;height:110px;">
+		</div>
+		
+		<br />
+		
+		<table class="fixed">
+
+  			<tr>
+    				<th style="padding:20px"; "text-align: center";>
+
+					A little bit about me...
+				</th>
+
+    				<th style="padding:20px"; "text-align: center";>
+
+					3 truths & 2 lies
+				</th>
+  			</tr>
+
+  			<tr>
+    				<td style="padding:20px"; "text-align: center";>
+
+					<p style = "font-family:georgia,garamond,serif;font-size:19px;font-style:italic;">
+
+						I was born in Montreal, Canada, in 1978. I first worked as a musician, having studied in several music schools in Canada, France and the <a href="https://www.ram.ac.uk//">Royal Academy of Music</a> in London. In 2014, I discovered the joys of programming, and after much personal study I embarked on a 4-year degree at <a href="https://www.city.ac.uk/">City University of London</a>. I have since worked at Gamma Telecoms as a database analyst, at the Knowledge Academy as a skills trainer and more recently as an A-Level computer science teacher at <a href="https://www.woodhouse.ac.uk/">Woodhouse College</a>. I am now working as trainee software developer at <a href="https://www.iggroup.com/">IG Group</a>, and I am loving it!
+					</p>
+
+				</td>
+
+    				<td style="padding:30px"; "text-align: center;">
+
+					<div id="checkboxgroup">
+
+  						<input type="checkbox" id="checkbox1" name="choice1" value="karate">I am a black belt in karate.<br><br>
+						<input type="checkbox" id="checkbox2" name="choice2" value="plane">I once had a cat called Sushi.<br><br>
+  						<input type="checkbox" id="checkbox3" name="choice3" value="surfing">I was runner-up at a junior swimming championship in Canada.<br><br>					
+						<input type="checkbox" id="checkbox4" name="choice4" value="plane">I lived in Japan for 6 months.<br><br>
+						<input type="checkbox" id="checkbox5" name="choice5" value="plane">I was an extra in season 1 of The Crown.<br><br>				
+		
+					<div style="text-align: center;">
+
+						<input type="button" id="btn" onclick="checking()" value="submit">
+					</div>
+		
+					<div style="text-align: center;">
+
+						<p id="result">
+
+							Result...?
+						</p>
+		
+						<div style="text-align: center;">
+
+							<input type="button" id="btnReset" onclick="reset()" value="reset">
+
+						</div>
+
+						<br>
+					</div>
+				</td>						 
+  			</tr>
+	</body>
+</html>
