@@ -35,7 +35,6 @@ img.one{
 }	
 
 #one{
-	/*color: green;*/
 	color: black;
 	position: absolute;
     top: 40%;
@@ -51,12 +50,11 @@ img.two{
 }
 
 #two{
-	/*color: red;*/
 	color: black;
 	position: absolute;
     top: 53%;
     left: 63%;
-margin-top: 10px;	
+	margin-top: 10px;	
 }
 
 img.three{
@@ -67,12 +65,23 @@ img.three{
 }
 
 #three{
-	/*color: blue;*/
 	color: black;
 	position: absolute;
     top: 63%;
     left: 63%;
 	margin-top: 10px;
+}
+
+#one:hover{
+	color: red;
+}
+
+#two:hover{
+	color: red;
+}
+
+#three:hover{
+	color: red;
 }
 
 
@@ -85,6 +94,10 @@ img.three{
     left: 42%;	
 }
 
+#special:hover {
+	color: red;
+}
+
 #bubble{
 	width: 70px;
 	height: 40px;
@@ -92,29 +105,3 @@ img.three{
     top: 68%;
     left: 41.3%;
 }
-
-.hoverenabled:hover {
-	color: red;
-}
-
-/*
-#special{
-	color: black;
-	font-family: 'Nunito Sans', sans-serif;
-	background-color: #C0C0C0;
-	padding: 7px;
-	border-radius: 7px;
-	-moz-border-radius: 7px;
-	-webkit-border-radius: 7px;
-	overflow: auto;
-	position: absolute;
-    top: 56%;
-    left: 41.8%;
-}
-*/
-
-
-
-
-
-
