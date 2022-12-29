@@ -93,6 +93,10 @@ img.three{
     left: 41.3%;
 }
 
+.hoverenabled:hover {
+	color: red;
+}
+
 /*
 #special{
 	color: black;
