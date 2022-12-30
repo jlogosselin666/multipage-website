@@ -1,2 +1,2 @@
 # multipage-website
-this personal project, built using HTML, CSS &amp; JS helped me understand the fundamentals of web development
+this personal project helped me understand the fundamentals of web development using HTML, CSS and JavaScript
