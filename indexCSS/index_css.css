@@ -58,6 +58,8 @@ img.two{
 }
 
 img.three{
+	height: 24px;
+ 	width: auto;
 	position: absolute;
     top: 63%;
     left: 60%;
