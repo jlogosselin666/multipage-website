@@ -1,5 +1,5 @@
 body{
-	background: blue url("mainPic.jpg") no-repeat center center fixed;
+	background: url("mainPic.jpg") no-repeat center center fixed;
 	color: black;
 	font-family: 'Lobster', cursive;
 	text-align: center;
@@ -28,7 +28,7 @@ p{
 #goodResult{
 	color: green;
 	font-weight: bold;
-	font-size: 50px;
+	font-size: 100px;
 	text-decoration: underline;	
 	margin-top: 100px;
 }
@@ -36,7 +36,7 @@ p{
 #badResult{
 	color: red;
 	font-weight: bold;
-	font-size: 50px;
+	font-size: 100px;
 	text-decoration: underline;	
 	margin-top: 100px;
 }
